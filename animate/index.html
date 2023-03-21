@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="animate.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const btn = document.querySelector('button');
+            const box = document.querySelector('#box');
+
+            btn.addEventListener('click', () => {
+                new Animate(box, {
+                    prop: 'left',
+                    value: 300,
+                    duration: 2000
+                });
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button>button</button>
+    <section>
+        <div id="box"></div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 3000px;
+}
+
+button {
+    margin: 50px;
+}
+
+section {
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    border: 1px solid #aaa;
+    margin: 0px auto;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background: aqua;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    opacity: 1;
+}
